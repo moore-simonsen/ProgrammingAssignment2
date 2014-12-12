@@ -1,5 +1,5 @@
-## Catching the inverse of a Matrix
-## Creates a special matrix object that can catch its inverse
+## Assignment: "Catching the inverse of a Matrix"
+## The following function creates a special matrix object that can catch its inverse:
 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Computes the inverse of the special matrix returned by makeCacheMatrix above
+## The following function computes the inverse of the special matrix returned by makeCacheMatrix above:
 
 cacheSolve <- function(x, ...) {
 	m <- x$getsolve()
@@ -26,6 +26,4 @@ cacheSolve <- function(x, ...) {
 	m <- solve(data, ...)
 	x$setsolve(m)
 	m
-}
-        ## Return a matrix that is the inverse of 'x'
 }
